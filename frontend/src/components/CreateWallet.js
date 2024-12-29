@@ -24,7 +24,7 @@ function CreateWallet({ username, onWalletCreated }) {
       };
 
       const response = await axios.post('http://localhost:3000/wallets', walletData);
-      onWalletCreated(response.data); // Notify parent about the new wallet
+      onWalletCreated(response.data);
       setAddress('');
       setBalance('');
       setCurrency('');

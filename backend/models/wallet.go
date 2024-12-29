@@ -2,7 +2,6 @@ package models
 
 import "gorm.io/gorm"
 
-// Wallet represents the wallet structure
 type Wallet struct {
     ID       uint   `json:"id" gorm:"primaryKey"`  // Add ID as the primary key
     Username string `json:"username"`             // User associated with the wallet

@@ -15,7 +15,7 @@ func main() {
 
 	// Enable CORS middleware for all origins
 	app.Use(cors.New(cors.Config{
-		AllowOrigins: "*",  // You can specify the origin here, e.g., "http://localhost:3001"
+		AllowOrigins: "*", 
 		AllowMethods: "GET,POST,PUT,DELETE",
 		AllowHeaders: "Origin, Content-Type, Accept",
 	}))
